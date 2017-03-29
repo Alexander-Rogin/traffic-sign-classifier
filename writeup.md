@@ -157,43 +157,43 @@ The code for making predictions on my final model is located in the tenth, eleve
 
 For the first image, the model correctly predicted that this is a keep left sign, however, the probability is lowish: 0.395. This can be explained by the obstacle in front of the sign. The top five soft max probabilities are:
 
-| Probability                | Prediction           |
-|:--------------------:|:--------------------:|
-| 0.395            | Keep Left            |
-| Keep Right           | Keep Right           |
-| Stop                 | Stop                 |
-| Roundabout mandatory | Roundabout mandatory |
-| Speed limit (30km/h) | Speed limit (50km/h) |
+| Probability | Prediction                          |
+|:-----------:|:-----------------------------------:|
+| .395        | Keep Left                           |
+| .175        | Bicycles crossing                   |
+| .117        | Yield                               |
+| .113        | Turn right ahead                    |
+| .112        | End of all speed and passing limits |
 
 For the second image, the model is completely sure that this is a keep right sign (probability of 0.9998), and the image does contain a keep right sign. The other four soft max probabilities are negligible.
 
 For the third image, the model is sure that this is a stop sign (probability 0.718), and the image does contain a stop sign. The top five soft max probabilities are:
 
-| Probability                | Prediction           |
-|:--------------------:|:--------------------:|
-| 0.718            | Stop            |
-| Keep Right           | Keep Right           |
-| Stop                 | Stop                 |
-| Roundabout mandatory | Roundabout mandatory |
-| Speed limit (30km/h) | Speed limit (50km/h) |
+| Probability | Prediction            |
+|:-----------:|:---------------------:|
+| .718        | Stop                  |
+| .265        | Yield                 |
+| .013        | Speed limit (20km/h)  |
+| .002        | Speed limit (100km/h) |
+| .002        | Speed limit (120km/h) |
 
 For the fourth image, the model is completely sure that this is a roundabout sign (probability 0.971), and the image does contain a roundabout sign. The top five soft max probabilities are:
 
-| Probability                | Prediction           |
-|:--------------------:|:--------------------:|
-| 0.971            | Roundabout            |
-| Keep Right           | Keep Right           |
-| Stop                 | Stop                 |
-| Roundabout mandatory | Roundabout mandatory |
-| Speed limit (30km/h) | Speed limit (50km/h) |
+| Probability | Prediction                               |
+|:-----------:|:----------------------------------------:|
+| .971        | Roundabout mandatory                     |
+| .014        | End of no passing                        |
+| .003        | Vehicles over 3.5 metric tons prohibited |
+| .003        | Turn left ahead                          |
+| .002        | No passing                               |
 
 For the fifth image, the model is somewhat sure that this is a speed limit (50 km/h) sign, (probability 0.432). Although the image does contain a speed limit sign, the actual limit 30 km/h hence the network misclassified the image. The number on the sign is partially hidden. The top five soft max probabilities are:
 
-| Probability                | Prediction           |
-|:--------------------:|:--------------------:|
-| 0.432            | Speed Limit (50 km/h)            |
-| Keep Right           | Keep Right           |
-| Stop                 | Stop                 |
-| Roundabout mandatory | Roundabout mandatory |
-| Speed limit (30km/h) | Speed limit (50km/h) |
+| Probability | Prediction            |
+|:-----------:|:---------------------:|
+| .432        | Speed Limit (50 km/h) |
+| .329        | Priority road         |
+| .065        | No vehicles           |
+| .057        | Go straight or left   |
+| .043        | Stop                  |
 
